@@ -5,3 +5,641 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/* I have started on full screen as I wasnt sure of mobile up building when staring but have figured it out now */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; 
+}
+  
+html {
+    font-size: 15px;
+    color: #323648;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* nav > header > main > foot > foot2 */
+  
+
+.nav {
+    height: 100px;
+    max-width: 100%;
+    color: #5b5e6d;
+    background-color: white;
+    border-bottom: 2px solid #F4F3F4;
+    font-size: 1rem;
+    padding: 0 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+  
+.nav img {
+    height: auto;
+    width: 125px;
+}
+  
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: 400;
+    line-height: 1.2;
+    list-style-type: none;
+}
+  
+.nav li {
+    margin: 1rem;
+    padding: 20px;
+    display: flex;
+    font-size: 1.3rem;
+}
+
+/* border for last li */
+
+.bordered {
+    border: 0.5px solid #5b5e6d;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+/* moving onto header section */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+  
+.header-img {
+    width: 100%;
+    margin-top: 20px;
+    flex-basis: 42%;
+}
+  
+.header-info {
+    flex-basis: 60%;
+}
+  
+.header-info button {
+    background-color: #192592;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1px solid #192592;
+    border-radius: 5px;
+    padding: 20px 40px;
+}
+  
+.header-info h1 {
+    font-size: 5.5rem;
+    font-weight: bolder;
+    line-height: 5rem;
+    width: 70%;
+}
+  
+.header-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #5b5e6d;
+    width: 85%
+}
+  
+.sign-in {
+    color: #5b5e6d;
+    font-size: 0.9em;
+}
+
+/* main body of html */
+
+.main {
+    max-width: 100%;
+    margin-top: 15px;
+}
+  
+.main-stuff {
+    text-align: center;
+    background-color: #F4F3F4;
+}
+  
+.main-stuff h2{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 50px;
+}
+
+.main-stuff p{
+    font-size: 1.25rem;
+}
+  
+.main-stuff button {
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: darkblue;
+    padding: 20px 35px;
+    margin-top: 20px;
+}
+  
+.img-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+  
+.img-set img {
+    width: 20%;
+    margin: 100px;
+}
+  
+.extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid whitesmoke;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+  
+.promo h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-bottom: 0px;
+}
+
+.promo p{
+    font-size: 1.25rem;
+    padding-left: 100px;
+}
+  
+.start-btn button {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+    border: 0.5px solid #192592;
+    background-color: #192592;
+    border-radius: 1px;
+    padding: 20px 100px 20px 40px;
+}
+
+/* footer first bit */
+
+.foot {
+    max-width: 100%;
+    padding-top: 50px;
+}
+  
+.foot-link {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 70px 20px;
+}
+  
+.foot-link img {
+    height: auto;
+    width: 150px;
+    margin-right: 20%;
+}
+  
+.foot-link ul {
+    list-style-type: none;
+    flex-basis: 15%;
+}
+  
+.foot-link li:first-child{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+  
+.foot-link li {
+    padding: 9px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* second foot*/
+  
+.bottom-foot {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #F4F3F4;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.bottom-foot ul {
+    list-style-type: none;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px;
+}
+
+/* bottom nav */ 
+
+.foot-nav {
+    flex-basis: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-right: 5%;
+    margin-bottom: 35px;
+}
+  
+.foot-nav img {
+    width: 30px;
+    height: 30px;
+}
+  
+.foot-nav i {
+    font-size: 2rem;
+    color:grey;
+}
+
+/* page looks good at normal scale, now to scale down by iteration 1, 2 & 3 
+ Iteration 1 */
+
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 767px) {
+    
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+    
+.header-info h1 {
+    font-size: 3.5em;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+    
+.header-info p {
+    color: #5b5e6d ;
+    font-size: 2.2em;
+    line-height: 1.5;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+    
+.header-info button {
+    width: 100%;
+    color: white; 
+    background-color: #192592;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 40px;
+}
+
+.sign-in {
+    color: #5b5e6d ;
+    font-size: 1.8em;
+    font-weight: bold;
+    align-items: center;
+}
+    
+.header-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: inline;
+}
+    
+.main {
+     max-width: 100%;
+}
+    
+.main-stuff {
+    padding-bottom: 60px;
+    background-color: #F4F3F4;
+    text-align: center;
+}
+    
+.main-stuff h2{
+    padding-top: 50px; 
+    font-size: 3.5em;
+}
+    
+.main-stuff p {
+    color: #5b5e6d;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+    
+.main-stuff button {
+    width: 45%;
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 4px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 40px;
+    margin: 60px auto;
+}
+    
+.img-set {
+    display: inline;
+}
+    
+.img-set img {
+    display: inline;
+    width: 20%;
+    margin: 50px 35%;
+}
+    
+.extra {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #F4F3F4;
+}
+    
+.promo h4 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+    
+.promo p {
+    color: #5b5e6d;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-left: 30px;
+}
+    
+.start-btn button {
+    color: white;
+    background-color: #192592;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 90%;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+    
+.foot {
+    max-width: 100%;
+    padding-top: 50px;
+}
+    
+.foot-link {
+    display: inline-block;
+}
+    
+.foot-link img {
+    display: inline;
+    width: 30%;
+    margin-right: 60%;
+}
+    
+.foot-link ul {
+    display: inline-block;
+    list-style-type: none;
+    width: 40%;
+    margin: 0;
+    vertical-align: text-top;
+}
+    
+.foot-link li:first-child{
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    
+.foot-link li {
+    margin: 0;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    padding-top: 0;
+}   
+
+.bottom-foot {
+    display: inline-block;
+    width: 100%; 
+    color: #2C303F ;
+    background-color: #F4F3F4 ;
+    margin-top: 100px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+        
+.bottom-foot ul {
+        list-style-type: none;
+        width: 60%;
+        margin: 20px auto;
+        margin-bottom: 30px;
+}
+        
+.bottom-foot li {
+         display: inline-block;
+}    
+
+.foot-nav {
+    display: inline-block;
+    margin-left: 30%;
+}
+    
+.foot-nav img {
+    width: 10%;
+    height: auto;
+}
+    
+.foot-nav span {
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+}
+    
+.foot-nav i {
+    width: 30%;
+    font-size: 1.5em;
+    margin-bottom: 60px;
+}
+}
+  
+/* iteration 3 */ 
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 959px) {
+    
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+        
+.header-info h1 {
+    font-size: 4em;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+        
+.header-info p {
+    color: #5b5e6d ;
+    font-size: 1.8em;
+    line-height: 1.5;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+}
+        
+.header-info button {
+    width: 100%;
+    color: white; 
+    background-color: #192592;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 40px;
+}
+    
+.sign-in {
+    color: #5b5e6d ;
+    font-size: 1.8em;
+    font-weight: bold;
+    align-items:stretch;
+    padding-left: 50px;
+}
+   
+        
+.header-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: inline;
+    padding-left: 120px;
+}
+        
+.main {
+    max-width: 100%;
+}
+        
+.main-stuff {
+    padding-bottom: 60px;
+    background-color: #F4F3F4;
+    text-align: center;
+}
+        
+.main-stuff h2{
+    padding-top: 50px; 
+    font-size: 3.5em;
+}
+        
+.main-stuff p {
+    color: #5b5e6d;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+        
+.main-stuff button {
+    width: 45%;
+    color: #192592;
+    background-color: white;
+    border: 1px solid #192592;
+    border-radius: 4px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 40px;
+    margin: 60px auto;
+}
+        
+.img-set img {
+    width: 30%;
+    margin: 50px; 
+}
+    
+.foot-link{
+    margin: 0;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    padding-top: 0;
+    padding-right: 80px;
+}
+
+.foot-link ul {
+    flex-basis: 50%;
+}
+      
+.foot-link li:first-child{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+}
+      
+.foot-link li {
+    padding: 5px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.bottom-foot {
+    display: flex;
+    justify-content: space-between;
+    align-content:flex-start;
+    background-color: #F4F3F4;
+    font-size: 1rem;
+    font-weight: bold;
+}
+      
+.bottom-foot ul {
+    list-style-type: none;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-nav {
+    flex-basis: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+      
+.foot-nav img {
+    width: 20px;
+    height: 20px;
+}
+      
+.foot-nav i {
+    font-size: 1rem;
+    color:grey;
+    justify-content:space-between;
+}
+}
+
+/* Havent finished iteration 3 */
